@@ -38,11 +38,10 @@ class _UserCountState extends State<UserCount> with WidgetsBindingObserver {
     super.didChangeAppLifecycleState(state);
     print('State - $state');
 
-    if (state == AppLifecycleState.paused ||
-        state == AppLifecycleState.inactive ||
+    if (state == AppLifecycleState.inactive ||
         state == AppLifecycleState.detached) {
       // make firebase function to -1 user from database when
-      //  state is paused/inactive/detached
+      //  state is inactive/detached
       print('remove');
     }
     if (state == AppLifecycleState.resumed) {
