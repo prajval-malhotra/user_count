@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 
-class LifeCycleManager extends StatefulWidget {
+class UserCount extends StatefulWidget {
   // takes a child and returns it from the build function
   final Widget child;
 
-  LifeCycleManager({Key? key, required this.child}) : super(key: key);
+  UserCount({Key? key, required this.child}) : super(key: key);
 
   @override
-  _LifeCycleManagerState createState() => _LifeCycleManagerState();
+  _UserCountState createState() => _UserCountState();
 }
 
 //
-class _LifeCycleManagerState extends State<LifeCycleManager>
-    with WidgetsBindingObserver {
+class _UserCountState extends State<UserCount> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return widget.child;
