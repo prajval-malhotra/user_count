@@ -1,6 +1,6 @@
 # user_count
 
-A new Flutter project.
+Updates the live user count for every user that opens/closes the app in real time.
 
 ## Getting Started
 
